@@ -69,17 +69,6 @@ def UFC_Fight_Statistics(links):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 links = UFC_Event_Links(soup)
 dates = UFC_Fight_Card_Date(soup)
 fight_links = UFC_Fight_Info(links)
