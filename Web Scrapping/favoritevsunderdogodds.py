@@ -22,7 +22,7 @@ def UFC_Odds_Event_Links(source):
 ## def UFC_Odds_Fighter_Info(source): 
 
 
-## Testing out code
+## Testing out fucntions
 event_info = UFC_Odds_Event_Links(soup)
 for event in event_info: 
     print("Date", event['date'])
