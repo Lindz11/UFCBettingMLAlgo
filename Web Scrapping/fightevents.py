@@ -67,7 +67,7 @@ def UFC_Fight_Statistics(links):
     return fighter1_data[:10] , fighter2_data[:10]
 
 
-
+## Testing out code
 links = UFC_Event_Links(soup)
 dates = UFC_Fight_Card_Date(soup)
 fight_links = UFC_Fight_Info(links)
