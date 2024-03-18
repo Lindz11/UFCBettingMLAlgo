@@ -43,7 +43,7 @@ def UFC_Fight_Card_Date(source):
     return date
     '''
 ## A function to look through each specific fight and scrap the 
-## method, round, sig striks, kd, tds, td attempts, ect.
+## sig striks, kd, tds, td attempts, ect.
 def UFC_Fight_Statistics(links):
     fighter1_data = []
     fighter2_data = []
