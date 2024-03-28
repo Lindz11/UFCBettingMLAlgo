@@ -19,7 +19,7 @@ def UFC_Odds_Event_Links(source):
                 fighteventoddslinksinfo.append({'date': date, 'event_link': event_link})
     return fighteventoddslinksinfo
 
-## def UFC_Odds_Fighter_Info(source): 
+## def UFC_Fighter_Odds_Info(source): 
 
 
 ## Testing out fucntions
