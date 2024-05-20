@@ -47,8 +47,8 @@ def UFC_Fighter_Info(fighter_link):
         value = item.get_text(strip=True, separator=" ").replace(title, "", 1).strip()
 
         # Clean the value
-        clean_value = re.sub(r'[,%/]|(lbs\.)', '', value)
-        clean_value = re.sub(r'\\', '', clean_value)
+        clean_value = re.sub(r'[,/]|(lbs\.)', '', value)
+        clean_value = re.sub(r'\\', '', clean_value).replace(":", "")
         
         # Store the value in the dictionary
         info_dict[title] = clean_value
@@ -90,11 +90,9 @@ def UCF_Fighter_DataFrame_Info(links):
 
     return all_data
 
-
-links = UCF_Fighter_Links()
-# Call the function to get the DataFrame
-all_data = UCF_Fighter_DataFrame_Info(links)
-print(all_data)
-# Save the DataFrame to the existing "Data" folder
-##save_dataframe_to_folder(all_data, "Data")
-
+info = UFC_Fighter_Info('http://ufcstats.com/fighter-details/792be9a24df82ed6')
+info
+## links = UCF_Fighter_Links()
+## Call the function to get the DataFrame
+## all_data = UCF_Fighter_DataFrame_Info(links)
+## all_data
